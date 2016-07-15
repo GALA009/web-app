@@ -1,83 +1,28 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
 	<title>IT教育网2015课程学习情况</title>
+	<link rel="stylesheet" type="text/css" href="dep/css/reset.min.css" >
+	<link rel="stylesheet" type="text/css" href="dep/css/H5.min.css" >
+	<link rel="stylesheet" type="text/css" href="dep/css/H5_loading.min.css" >
 
 	<!-- 载入所有的组件资源 -->
-	<script type="text/javascript" src="js/lib/jquery.js"></script>
-	<script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
-
+	<script type="text/javascript" src="dep/js/lib/jquery.js"></script>
+	<script type="text/javascript" src="dep/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="dep/js/lib/jquery.fullPage.js"></script>
 
 	<!-- H5对象：进行内容管理 -->
-
-	<script type="text/javascript" src="js/H5.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/H5.css" >
-
-	<script type="text/javascript" src="js/H5_loading.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/H5_loading.css" >
-
-	<!-- 页面逻辑的样式 -->
-	<style type="text/css">
-
-		body{
-			margin: 0;
-			padding: 0;
-		}
-
-		.h5_page{
-			background-image: url(imgs/page_bg.png);
-		}
-		.h5_page_face{
-			background-image: url(imgs/face_bg.png);
-		}
-		.h5_component_name_slogan{
-			-webkit-animation:rock 2s infinite 2s;
-		}
-		@-webkit-keyframes rock{
-			0%{ transform:rotate(0deg)}
-			5%{ transform:rotate(3deg)}
-			10%{ transform:rotate(-4deg)}
-			15%{ transform:rotate(3deg)}
-			20%{ transform:rotate(-2deg)}
-			25%{ transform:rotate(1deg)}
-			30%{ transform:rotate(-1deg)}
-			70%{ transform:rotate(0deg)}
-			100%{ transform:rotate(0deg)}
-		}
-
-		.h5_component_name_caption{
-			background-image: url(imgs/page_caption_bg.png);
-			width: 283px;
-			height: 160px;
-			text-align: center;
-			line-height: 140px;
-			font-size: 20px;
-			color: #fff;
-		}
-		.h5_component_name_back{
-			top: 30px;
-			-webkit-animation:back 2s infinite 2s;
-		}
-
-		@-webkit-keyframes back{
-			50%{ top: 20px; }
-		}
-	</style>
-
+	<script type="text/javascript" src="dep/js/global.min.js"></script>
 
 	<body>
 
 	<div class="loading">
-
 		<div class="double-bounce1"></div>
 		<div class="double-bounce2"></div>
-
 		<div id="rate">0%</div>
-
 	</div>
 
 
@@ -91,9 +36,7 @@
 			];
 		var html = [];
 		for(s in res){
-			html.push('<script type="text/javascript" src="js/H5Component'+res[s]+'.js"><\/script>');
-			html.push('<link rel="stylesheet" type="text/css" href="css/H5Component'+res[s]+'.css">');
-
+			html.push('<link rel="stylesheet" type="text/css" href="dep/css/H5Component'+res[s]+'.min.css">');
 		}
 		document.write( html.join('') );
 	</script>
@@ -101,12 +44,11 @@
 	<script type="text/javascript">
 
 		$(function  () {
-
 			var h5 = new H5();
 
 			h5.whenAddPage = function(){
 				this.addComponent('slide_up',{
-					bg:'imgs/footer.png',
+					bg:'dep/imgs/footer.png',
 					css:{
 						opacity:0,
 						left:0,
@@ -133,7 +75,7 @@
 					center:true,
 					width:395,
 					height:130,
-					bg:'imgs/face_logo.png',
+					bg:'dep/imgs/face_logo.png',
 					css:{opacity:0},
 					animateIn:{top:100,opacity:1},
 					animateOut:{top:0,opacity:0},
@@ -142,7 +84,7 @@
 					center:true,
 					width:365,
 					height:99,
-					bg:'imgs/face_slogan.png',
+					bg:'dep/imgs/face_slogan.png',
 					css:{opacity:0,top:180},
 					animateIn:{left:'50%',opacity:1},
 					animateOut:{left:'0%',opacity:0},
@@ -151,20 +93,20 @@
 				.addComponent('face_img_left',{
 					width:370,
 					height:493,
-					bg:'imgs/face_img_left.png',
+					bg:'dep/imgs/face_img_left.png',
 					css:{opacity:0,left:-50,bottom:-50},
 					animateIn:{opacity:1,left:0,bottom:0},
 					animateOut:{opacity:0,left:-50,bottom:-50},
 					delay:1000
 				})
-				.addComponent('face_img_right',{
-					width:276,
-					height:449,
-					bg:'imgs/face_img_right.png',
-					css:{opacity:0,right:-50,bottom:-50},
-					animateIn:{opacity:1,right:0,bottom:0},
-					animateOut:{opacity:0,right:-50,bottom:-50},
-					delay:1000
+                .addComponent('face_img_right',{
+                    width:276,
+                    height:449,
+                    bg:'dep/imgs/face_img_right.png',
+                    css:{opacity:0,right:-50,bottom:-50},
+                    animateIn:{opacity:1,right:0,bottom:0},
+                    animateOut:{opacity:0,right:-50,bottom:-50},
+                    delay:1000
 				})
 			.addPage()
 				.addComponent('caption',{text:'核心理念'})
@@ -183,7 +125,7 @@
 					center:true,
 					width:481,
 					height:295,
-					bg:'imgs/description_bg.gif',
+					bg:'dep/imgs/description_bg.gif',
 					css:{
 						opacity:0,
 						padding:'15px 10px 10px 10px',
@@ -202,7 +144,7 @@
 					center:true,
 					width:515,
 					height:305,
-					bg:'imgs/p1_people.png',
+					bg:'dep/imgs/p1_people.png',
 					css:{
 						opacity:0,
 						bottom:0
@@ -211,7 +153,7 @@
 					animateOut:{opacity:0,bottom:0},
 					delay:500
 				})
-			
+
 			.addPage()
 				.addComponent('caption',{text:'课程分布方向'})//polyline
 				.addComponent('polyline',{
@@ -507,42 +449,73 @@
 					center:true,
 					width:359,
 					height:129,
-					bg:'imgs/tail_logo.png',
-					css:{top:240,opacity:0},
-					animateIn:{opacity:1,top:210},
-					animateOut:{opacity:0,top:240},
+					bg:'dep/imgs/tail_logo.png',
+					css:{
+						top:240,
+						opacity:0
+					},
+					animateIn:{
+						opacity:1,
+						top:210
+					},
+					animateOut:{
+						opacity:0,
+						top:240
+					},
 				})
 				.addComponent('slogan',{
 					center:true,
 					width:314,
 					height:46,
-					bg:'imgs/tail_slogan.png',
-					css:{top:280,opacity:0},
-					animateIn:{opacity:1,left:'50%'},
-					animateOut:{opacity:0,left:'0%'},
+					bg:'dep/imgs/tail_slogan.png',
+					css:{
+						top:280,
+						opacity:0
+					},
+					animateIn:{
+						opacity:1,
+						left:'50%'
+					},
+					animateOut:{
+						opacity:0,
+						left:'0%'
+					},
 					delay:500
 				})
 				.addComponent('share',{
 					width:128,
 					height:120,
-					bg:'imgs/tail_share.png',
-					css:{opacity:0,top:110,right:110},
-					animateIn:{opacity:1,top:10,right:10},
-					animateOut:{opacity:0,top:110,right:110},
-					delay:1000 
+					bg:'dep/imgs/tail_share.png',
+					css:{
+						opacity:0,
+						top:110,
+						right:110
+					},
+					animateIn:{
+						opacity:1,
+						top:10,
+						right:10
+					},
+					animateOut:{
+						opacity:0,
+						top:110,
+						right:110
+					},
+					delay:1000
 				})
 				.addComponent('back',{
 					width:52,
 					height:50,
-					bg:'imgs/tail_back.png',
+					bg:'dep/imgs/tail_back.png',
 					center:true,
 					onclick : function(){
-						 $.fn.fullpage.moveTo( 1 )
+						 $.fn.fullpage.moveTo( 1 );
 					}
 				})
 
-			.loader( [ 'imgs/tail_back.png','imgs/tail_share.png','imgs/tail_slogan.png' ] );
+			.loader( [ 'dep/imgs/description_bg.gif', 'dep/imgs/face_bg.png', 'dep/imgs/face_img_left.png', 'dep/imgs/face_img_right.png', 'dep/imgs/face_logo.png', 'dep/imgs/face_slogan.png', 'dep/imgs/footer.png', 'dep/imgs/p1_people.png', 'dep/imgs/page_bg.png', 'dep/imgs/page_caption_bg.png', 'dep/imgs/tail_back.png','dep/imgs/tail_logo.png','dep/imgs/tail_share.png','dep/imgs/tail_slogan.png' ] );
 
+			$('.h5_page_face').find('.h5_component_base').trigger('onLoad');
 		});
 	</script>
 
