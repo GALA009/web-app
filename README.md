@@ -10,15 +10,19 @@
 ![折线图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/polyline.png?raw=true "折线图")  
 
 ###横向柱状图
-![横向柱状图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/polyline.png?raw=true "横向柱状图")  
+![横向柱状图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/bar.png?raw=true "横向柱状图")  
+
 ###竖向柱状图
-![竖向柱状图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/polyline.png?raw=true "竖向柱状图")  
+![竖向柱状图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/bar_v.png?raw=true "竖向柱状图")  
 
 ###饼图
-![饼图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/polyline.png?raw=true "饼图")  
+![饼图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/pie.png?raw=true "饼图")  
 
 ###环图
-![环图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/polyline.png?raw=true "环图")  
+![环图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/ring.png?raw=true "环图")  
 
 ###散点图
-![散点图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/polyline.png?raw=true "散点图")  
+![散点图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/point.png?raw=true "散点图")  
+
+###雷达图
+![雷达图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/radar.png?raw=true "雷达图")  
