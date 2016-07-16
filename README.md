@@ -30,8 +30,8 @@
 
 ##使用方法
 ```python
-git clone https://github.com/genmmao/web-app.git
-cd web-app
-npm install
-npm start
+git clone https://github.com/genmmao/web-app.git  
+cd web-app  
+npm install  
+npm start  
 ```
