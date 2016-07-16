@@ -4,7 +4,7 @@
 
 其中包含的库有jquery.js，jquery-ui.min.js，jquery.fullPage.js。
 
-##数据表
+##数据图表
 
 ###折线图
 ![折线图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/polyline.png?raw=true "折线图")  
@@ -26,3 +26,12 @@
 
 ###雷达图
 ![雷达图](https://github.com/genmmao/MarkdownPhotos/blob/master/web-app-photos/radar.png?raw=true "雷达图")  
+
+
+##使用方法
+```python
+git clone https://github.com/genmmao/web-app.git
+cd web-app
+npm install
+npm start
+```
